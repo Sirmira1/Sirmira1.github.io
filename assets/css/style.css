@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;                     
+}
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    color: #000;
+    min-height: 100vh;
+}
+.navbar {
+    top: 0;
+    width: 100%;
+    padding: 24px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+}
+.navbar a {
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+}
+.main-text {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 120px 80px 80px;
+}
+.main-text h1 {
+    font-size: 48px;
+    margin-bottom: 5em;
+}
+.btext {
+    width: 75vw;
+    font-size: clamp(34px, 5vw, 56px);
+    line-height: 1.15;
+    font-weight: 400;
+}
+.pill {
+    display: inline-flex;
+    align-items: center;
+    margin: 0 8px;
+}
+.pill img {
+    height: 40px;
+    width: auto;
+    border-radius: 999px;
+    object-fit: cover;
+}
+#line {
+    margin-top: 32px;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+}
+a {
+    transition: opacity 0.2s ease;
+}
+
+a:hover {
+    opacity: 0.6;
+}
+.about {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 80px;
+    padding: 140px 80px 400px 80px;
+    align-items: center;
+}
+.about-image img {
+    width: 100%;
+    max-width: 420px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+.about ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.about li {
+    background: #ffedbf;
+    padding: 6px 12px;
+    border-radius: 999px;
+    font-size: 14px;
+}
+#resume {
+    text-decoration: none;
+}
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 80px;
+}
+.footer p {
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+.footer a {
+    display: block;
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+@media (max-width: 800px) {
+    .about {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        padding: 120px 24px 80px;
+        text-align: center;
+    }
+    .about-image img {
+        max-width: 260px;
+        margin: 0 auto;
+        display: block;
+    }
+    .navbar {
+        padding: 20px 24px;
+    }
+    .footer {
+        padding: 30px 24px;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
